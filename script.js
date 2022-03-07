@@ -170,8 +170,39 @@ btnTransfer.addEventListener('click', function (e) {
     // Doing Transfer
     currentAccount.movements.push(-amount);
     receiverAcc.movements.push(amount);
+    // displaying result
     UpdateUI(currentAccount);
   }
+});
+// Maximum loan is not greater than Maximum deposit
+btnLoan.addEventListener('click', e => {
+  e.preventDefault();
+  const amount = Number(inputLoanAmount.value);
+  if (amount > 0 && currentAccount.movements.some(mov => mov >= amount * 0.1)) {
+    // add movement
+    currentAccount.movements.push(amount);
+    // updating
+    UpdateUI(currentAccount);
+  }
+  inputLoanAmount.value = '';
+});
+
+btnClose.addEventListener('click', e => {
+  e.preventDefault();
+
+  if (
+    inputCloseUsername.value === currentAccount.username &&
+    Number(inputClosePin.value) === currentAccount.pin
+  ) {
+    const index = accounts.findIndex(
+      acc => acc.username === currentAccount.username
+    );
+    // deleting account
+    accounts.splice(index, 1);
+    // hiding interface
+    containerApp.style.opacity = 0;
+  }
+  inputCloseUsername.value = inputClosePin.value = '';
 });
 
 /////////////////////////////////////////////////
