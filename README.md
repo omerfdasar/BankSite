@@ -1,6 +1,8 @@
 # BankSite
-I used different array methods and DOM elements to create this site.
 
+Website: https://omerfdasar.github.io/BankSite/
+
+I used different array methods and DOM elements to create this site.
 
 Bankist is a fabricated and basic online banking application that allows the user to:
 
