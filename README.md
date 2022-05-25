@@ -14,10 +14,10 @@ Delete their account
 
 
 Log in credentials:
-name: Jonas Schmedtmann | username: js | password: 1111
-name: Jessica Davis | username: jd | password 2222
-name: Steven Thomas Williams | username: stw | password 3333
-name: Sarah Smith | username: ss | password 4444
+name: Jonas Schmedtmann | username: js | password: 1111 </br>
+name: Jessica Davis | username: jd | password 2222 </br>
+name: Steven Thomas Williams | username: stw | password 3333 </br>
+name: Sarah Smith | username: ss | password 4444 </br>
 
 
 This project is based on The Complete JavaScript Course 2021: From Zero to Expert! by Jonas Schmedtmann
